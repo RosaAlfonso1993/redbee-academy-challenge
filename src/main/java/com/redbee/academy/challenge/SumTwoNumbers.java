@@ -1,5 +1,5 @@
 package com.redbee.academy.challenge;
-
+import java.util.Objects;
 public class SumTwoNumbers {
 
   /**
@@ -10,8 +10,11 @@ public class SumTwoNumbers {
    * @param b - Another Integer Number
    * @return The result of a + b
    */
+  public static Integer isNull(Integer num) {
+    return Objects.requireNonNullElse(num,0);
+  }
+
   public static Integer sum(Integer a, Integer b) {
-    //TODO: Implement me
-    return null;
+    return isNull(a) + isNull(b);
   }
 }
