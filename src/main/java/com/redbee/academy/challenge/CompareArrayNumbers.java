@@ -15,9 +15,6 @@ public class CompareArrayNumbers {
    * @param b - Another Integer Number
    * @return The result of a + b
    */
-  public static Integer isNull(Integer num) {
-    return Objects.requireNonNullElse(num,0);
-  }
 
   public static List<Integer> max(List<Integer> a, List<Integer> b) {
     List<Integer> listAllNumbers = new ArrayList<Integer>();
